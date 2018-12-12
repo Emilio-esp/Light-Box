@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 70%; 
+    height: 100vh;
+    margin: 25px auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr); 
+    grid-template-rows:repeat(3, 1fr); 
+    justify-items: stretch;
+    align-items: stretch;
+    grid-gap: 0.5em;
+}
+
+.gallery-img {
+    display: block;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+/* lightBox styles  */
+
+.lightBox-title {
+    color: rgba(255,255,255,0.50);
+    font-size: 16px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container-lightBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.85);
+    
+}
+
+.box-image {
+    width: 800px;
+    height: 450px;
+}
+
+.image-lightBox{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.icon-image {
+    color: rgba(255,255,255,0.50);
+    font-size: 30px;
+}
+
+.arrow-left {
+    position: absolute;
+    top: 50%;
+    left: 1.5em;
+}
+
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    right: 1.5em;
+}
+
+.icon-close {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+}
+
+
