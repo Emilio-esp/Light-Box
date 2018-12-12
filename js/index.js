@@ -113,3 +113,16 @@ gallery.addEventListener('click', e =>{
         elementPosition = elementPosition + 1;
     });
 })
+
+
+document.addEventListener('keydown', (e) => {
+    if (e.key == "Escape") {
+        let lightBox = document.getElementById('lightBox');
+
+        if (lightBox) {
+            lightBox.parentNode.removeChild(lightBox);
+        }
+
+    }
+
+});
